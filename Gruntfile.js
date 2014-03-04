@@ -28,10 +28,37 @@ module.exports = function (grunt) {
         },
         src: ['test/dalek/*.js']    
       }
-    }    
+    },
+
+    // execute shell commands for hardy & wraith
+    shell: {
+      setupHardy: {
+        options: {
+          stdout: true
+        },
+        command: 'hardy selenium start && sleep 2'       
+      },
+      hardy: {
+        options: {
+          stdout: true
+        },
+        command: 'hardy --browser=phantomjs test/hardy'
+      },
+      teardownHardy: {
+        options: {
+          stdout: true
+        },
+        command: 'hardy selenium stop'       
+      }                     
+    } 
+
   });
+
+  // hardy (using setup & teardown)
+  grunt.registerTask('hardy', ['shell:setupHardy', 'shell:hardy', 'shell:teardownHardy']);
 
   // load external grunt tasks
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-dalek');
+  grunt.loadNpmTasks('grunt-shell');  
 };

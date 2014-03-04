@@ -20,6 +20,7 @@
     "dalekjs": "0.0.8",
     "dalek-browser-chrome": "0.0.9",
     "dalek-reporter-html": "0.0.3",
-    "grunt-dalek": "~0.2.0"
+    "grunt-dalek": "~0.2.0",
+    "grunt-shell": "~0.6.4"
   }
 }
