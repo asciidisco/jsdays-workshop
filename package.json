@@ -21,6 +21,7 @@
     "dalek-browser-chrome": "0.0.9",
     "dalek-reporter-html": "0.0.3",
     "grunt-dalek": "~0.2.0",
-    "grunt-shell": "~0.6.4"
+    "grunt-shell": "~0.6.4",
+    "grunt-patternprimer": "~0.1.1"
   }
 }
