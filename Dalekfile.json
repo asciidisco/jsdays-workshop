@@ -1,3 +1,7 @@
 {
-	"browser": ["chrome"]
+	"browser": ["chrome"],
+	"reporter": ["console", "html"],
+	"html-reporter": {
+  		"dest": "report/dalek"
+	}
 }
