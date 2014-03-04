@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Frontend Testing Workshop - Info</title>  
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="page">
+	<h1>Information</h1>
+	<h2>I could be from another Domain</h2>
+	<script src="scripts/jquery.js"></script>
+	<script>
+		$(document).on('contentAdd', function (event, message) {
+
+			$('body').append('<p>' + message + '</p>');
+		});
+
+		setInterval(function () {
+			var message = Math.random().toString(36).substring(7);
+			window.lastMessage = message;
+			$(document).trigger('contentAdd', [message]);
+		}, 3500);
+	</script>
+</body>
+</html>

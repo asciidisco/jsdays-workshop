@@ -1,0 +1,21 @@
+{
+  "name": "dalek-workshop",
+  "version": "0.0.1",
+  "description": "DalekJS Workshop",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/asciidisco/jsdays-workshop.git"
+  },
+  "author": "Sebastian Golasch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asciidisco/jsdays-workshop/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~0.6.0"
+  }
+}

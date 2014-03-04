@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Frontend Testing Workshop - Comments</title>  
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body  class="page" data-qa="pa-3">
+    <div id="content">
+    <header>
+        <hgroup id="titles">
+            <h1 id="title">Frontend Testing Workshop</h1>
+            <h2 id="subtitle">JavaScript Days 2014</h2>
+        </hgroup>
+        <nav>
+            <h1>Site Navigation</h1>
+            <a href="/index.html">Topics</a>     
+            <a href="/about.html">About</a>  
+            <a href="/comments.html">Comments</a>
+            <a href="/info.html">Info</a>     
+        </nav>
+    </header>
+    <section id="contact" class="grad">
+        <h1>Comments</h1>
+        <form id="comments-form">
+            <input id="name" name="name" type="text" placeholder="full name" required/><br/>
+            <input id="email" name="email" type="email" placeholder="email" required/><br/>
+
+            <input name="public" type="radio" value="public"/>
+            <span>Public</span><br/>
+            <input name="public" type="radio" value="notpublic"/>
+            <span>Not Public</span><br/>
+
+            <textarea id="comments" placeholder="comments"></textarea><br/>
+            <input id="submit"  name="submit"   type="submit"   value="Submit" />
+        </form><br/><br/>
+
+        <div>
+            <h2>Last comment</h2>
+            <div id="comment-placeholder">No comment</div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2014 <a href="http://www.asciidisco.com">Sebastian Golasch</a></p>
+    </footer>
+    </div>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
